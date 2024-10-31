@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/etInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="Enter a positive integer" />
+
+    <RadioGroup
+        android:id="@+id/rgOptions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/rbEven"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Even numbers" />
+
+        <RadioButton
+            android:id="@+id/rbOdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Odd numbers" />
+
+        <RadioButton
+            android:id="@+id/rbSquare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Perfect square numbers" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnShow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Show" />
+
+    <ListView
+        android:id="@+id/lvNumbers"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/tvError"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/holo_red_dark" />
+
+</LinearLayout>
